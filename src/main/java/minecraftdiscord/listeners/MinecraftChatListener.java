@@ -1,7 +1,7 @@
-package com.example.minecraftdiscord.listeners;
+package minecraftdiscord.listeners;
 
-import com.example.minecraftdiscord.MinecraftDiscordPlugin;
-import com.example.minecraftdiscord.discord.DiscordBot;
+import minecraftdiscord.MinecraftDiscordPlugin;
+import minecraftdiscord.discord.DiscordBot;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;

@@ -1,8 +1,8 @@
-package com.example.minecraftdiscord.discord;
+package minecraftdiscord.discord;
 
-import com.example.minecraftdiscord.MinecraftDiscordPlugin;
-import com.example.minecraftdiscord.discord.commands.*;
-import com.example.minecraftdiscord.listeners.DiscordChatListener;
+import minecraftdiscord.MinecraftDiscordPlugin;
+import minecraftdiscord.discord.commands.*;
+import minecraftdiscord.listeners.DiscordChatListener;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
@@ -104,7 +104,7 @@ public class DiscordBot {
                     new CountCommand(plugin),
                     new TimeCommand(plugin),
                     new RecCommand(plugin),
-                    new PosCommand(plugin),
+                    new DiscordPosCommand(plugin),  // 名前を変更して衝突を避ける
                     new TopCommand(plugin)
             );
 

@@ -1,9 +1,9 @@
-package com.example.minecraftdiscord.scheduler;
+package minecraftdiscord.scheduler;
 
-import com.example.minecraftdiscord.MinecraftDiscordPlugin;
-import com.example.minecraftdiscord.database.DatabaseManager;
-import com.example.minecraftdiscord.database.PlayerData;
-import com.example.minecraftdiscord.discord.DiscordBot;
+import minecraftdiscord.MinecraftDiscordPlugin;
+import minecraftdiscord.database.DatabaseManager;
+import minecraftdiscord.database.PlayerData;
+import minecraftdiscord.discord.DiscordBot;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import org.bukkit.Bukkit;

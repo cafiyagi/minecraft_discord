@@ -1,4 +1,4 @@
-package com.example.minecraftdiscord.database;
+package minecraftdiscord.database;
 
 public class PlayerData {
     private String minecraftUuid;

@@ -1,7 +1,7 @@
-package com.example.minecraftdiscord.listeners;
+package minecraftdiscord.listeners;
 
-import com.example.minecraftdiscord.MinecraftDiscordPlugin;
-import com.example.minecraftdiscord.database.DatabaseManager;
+import minecraftdiscord.MinecraftDiscordPlugin;
+import minecraftdiscord.database.DatabaseManager;
 import org.bukkit.Location;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;

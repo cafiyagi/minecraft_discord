@@ -1,6 +1,6 @@
-package com.example.minecraftdiscord.database;
+package minecraftdiscord.database;
 
-import com.example.minecraftdiscord.MinecraftDiscordPlugin;
+import minecraftdiscord.MinecraftDiscordPlugin;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
 

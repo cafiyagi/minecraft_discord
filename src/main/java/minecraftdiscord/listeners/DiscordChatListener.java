@@ -1,6 +1,6 @@
-package com.example.minecraftdiscord.listeners;
+package minecraftdiscord.listeners;
 
-import com.example.minecraftdiscord.MinecraftDiscordPlugin;
+import minecraftdiscord.MinecraftDiscordPlugin;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;

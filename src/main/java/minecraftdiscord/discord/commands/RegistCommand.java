@@ -1,7 +1,7 @@
-package com.example.minecraftdiscord.discord.commands;
+package minecraftdiscord.discord.commands;
 
-import com.example.minecraftdiscord.MinecraftDiscordPlugin;
-import com.example.minecraftdiscord.database.DatabaseManager;
+import minecraftdiscord.MinecraftDiscordPlugin;
+import minecraftdiscord.database.DatabaseManager;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.bukkit.Bukkit;

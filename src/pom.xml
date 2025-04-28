@@ -46,12 +46,7 @@
             <groupId>net.dv8tion</groupId>
             <artifactId>JDA</artifactId>
             <version>5.0.0-beta.13</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>club.minnced</groupId>
-                    <artifactId>opus-java</artifactId>
-                </exclusion>
-            </exclusions>
+            <!-- scope は compile (デフォルト) -->
         </dependency>
 
         <!-- SQLite JDBC ドライバ -->
@@ -68,12 +63,11 @@
             <version>2.0.9</version>
         </dependency>
 
-        <!-- SLF4J Simple バインディング（開発用） -->
+        <!-- SLF4J Simple バインディング -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>2.0.9</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -100,19 +94,6 @@
                         </goals>
                         <configuration>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
-                            <!-- JARに含める依存ライブラリ（JDA, SQLite）を設定 -->
-                            <artifactSet>
-                                <includes>
-                                    <include>net.dv8tion:JDA</include>
-                                    <include>org.xerial:sqlite-jdbc</include>
-                                    <include>org.slf4j:slf4j-api</include>
-                                    <include>com.neovisionaries:nv-websocket-client</include>
-                                    <include>com.squareup.okhttp3:*</include>
-                                    <include>com.fasterxml.jackson.core:*</include>
-                                    <include>org.apache.commons:commons-collections4</include>
-                                    <include>com.squareup.okio:*</include>
-                                </includes>
-                            </artifactSet>
                             <filters>
                                 <filter>
                                     <artifact>*:*</artifact>
@@ -126,21 +107,6 @@
                                     </excludes>
                                 </filter>
                             </filters>
-                            <relocations>
-                                <!-- 依存ライブラリの名前空間を変更してクラスの衝突を防ぐ -->
-                                <relocation>
-                                    <pattern>net.dv8tion.jda</pattern>
-                                    <shadedPattern>minecraftdiscord.lib.jda</shadedPattern>
-                                </relocation>
-                                <relocation>
-                                    <pattern>org.sqlite</pattern>
-                                    <shadedPattern>minecraftdiscord.lib.sqlite</shadedPattern>
-                                </relocation>
-                                <relocation>
-                                    <pattern>org.slf4j</pattern>
-                                    <shadedPattern>minecraftdiscord.lib.slf4j</shadedPattern>
-                                </relocation>
-                            </relocations>
                         </configuration>
                     </execution>
                 </executions>

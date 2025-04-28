@@ -1,4 +1,4 @@
-package com.example.minecraftdiscord.utils;
+package minecraftdiscord.utils;
 
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.MessageEmbed;
