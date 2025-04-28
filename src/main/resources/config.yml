@@ -1,0 +1,40 @@
+# Discord Bot設定
+discord:
+  # Botトークン（必須）
+  token: "YOUR_DISCORD_BOT_TOKEN_HERE"
+
+  # サーバー（ギルド）ID
+  guild_id: "YOUR_DISCORD_GUILD_ID_HERE"
+
+  # チャットブリッジに使用するチャンネルID
+  chat_bridge_channel: "YOUR_DISCORD_CHANNEL_ID_HERE"
+
+# データベース設定
+database:
+  # データベースタイプ（現在はSQLiteのみサポート）
+  type: sqlite
+
+  # データベースファイル名
+  filename: "playerdata.db"
+
+# 統計設定
+stats:
+  # プレイ時間を分単位で更新する間隔（分）
+  playtime_update_interval: 5
+
+  # 座標を更新する距離の閾値（ブロック）
+  position_update_threshold: 10
+
+  # 移動距離の計算に使用する最大距離（これ以上の移動はテレポートと見なす）
+  max_distance_threshold: 100
+
+# メッセージ設定
+messages:
+  # MinecraftからDiscordへのチャットフォーマット
+  minecraft_to_discord: "**{player}**: {message}"
+
+  # DiscordからMinecraftへのチャットフォーマット
+  discord_to_minecraft: "[Discord] {username}: {message}"
+
+# デバッグモード（開発中のみtrueに設定）
+debug: false

@@ -1,0 +1,17 @@
+name: MinecraftDiscordPlugin
+version: 1.0.0
+main: com.example.minecraftdiscord.MinecraftDiscordPlugin
+api-version: 1.21
+description: Minecraft と Discord を連携するプラグイン
+author: YourName
+
+commands:
+  pos:
+    description: 現在の座標をDiscordに送信します
+    usage: /<command>
+    permission: minecraftdiscord.pos
+
+permissions:
+  minecraftdiscord.pos:
+    description: posコマンドの使用権限
+    default: true
